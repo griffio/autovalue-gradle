@@ -12,7 +12,7 @@ public abstract class Cash {
     public abstract BigDecimal value();
 
     public static Cash create(Currency currency, BigDecimal value) {
-        return null;
+        return new AutoValue_Cash(currency, value.setScale(2, BigDecimal.ROUND_HALF_UP));
     }
 
 }

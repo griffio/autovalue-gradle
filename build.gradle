@@ -4,9 +4,17 @@ plugins {
 }
 
 autoValue {
-    autoValueSourcesDir = "src/autoValue/java"
+    autoValueSourcesDir = 'src/autoValue/java'
 }
 
 repositories {
     jcenter()
 }
+
+dependencies {
+
+    testCompile(
+            'com.google.guava:guava-testlib:18.0'
+    )
+}
+
