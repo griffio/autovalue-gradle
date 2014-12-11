@@ -3,6 +3,8 @@ autovalue-gradle
 
 autovalue with gradle
 
+https://github.com/google/auto
+
 Using the ewerk plugin 
 
 https://github.com/ewerk/gradle-plugins/tree/master/auto-value-plugin
