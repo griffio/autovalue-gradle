@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+    id 'com.ewerk.gradle.plugins.auto-value' version '1.0.1'
+}
+
+autoValue {
+    autoValueSourcesDir = "src/autoValue/java"
+}
+
+repositories {
+    jcenter()
+}
