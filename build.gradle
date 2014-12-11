@@ -12,9 +12,7 @@ repositories {
 }
 
 dependencies {
-
     testCompile(
-            'com.google.guava:guava-testlib:18.0'
+        'com.google.guava:guava-testlib:18.0'
     )
 }
-
