@@ -5,11 +5,6 @@ import com.google.auto.value.AutoValue;
 import java.math.BigDecimal;
 import java.util.Currency;
 
-<<<<<<< Updated upstream
-@AutoValue
-public abstract class Cash {
-
-=======
 /**
  * Cash value with scaling of 2 rounded up for input values.
  * package private constructor
@@ -19,7 +14,6 @@ public abstract class Cash {
 
     Cash() {}
 
->>>>>>> Stashed changes
     public abstract Currency currency();
     public abstract BigDecimal value();
 

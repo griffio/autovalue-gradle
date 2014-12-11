@@ -14,12 +14,9 @@ public class CashTest {
 
         new EqualsTester()
                 .addEqualityGroup(
-<<<<<<< Updated upstream
-=======
                         Cash.create(Currency.getInstance(Locale.UK), BigDecimal.ZERO),
                         Cash.create(Currency.getInstance(Locale.UK), new BigDecimal("0")))
                 .addEqualityGroup(
->>>>>>> Stashed changes
                         Cash.create(Currency.getInstance(Locale.UK), new BigDecimal("10.50")),
                         Cash.create(Currency.getInstance(Locale.UK), new BigDecimal("10.5012")))
                 .addEqualityGroup(
