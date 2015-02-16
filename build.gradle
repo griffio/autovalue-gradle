@@ -16,3 +16,5 @@ dependencies {
         'com.google.guava:guava-testlib:18.0'
     )
 }
+
+apply from: 'wrapper.gradle'
