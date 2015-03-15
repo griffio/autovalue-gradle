@@ -13,10 +13,9 @@ repositories {
 }
 
 dependencies {
-
-    testCompile(
-            'com.google.guava:guava-testlib:18.0'
-    )
+  testCompile(
+      'com.google.guava:guava-testlib:18.0'
+  )
 }
 
 apply from: 'wrapper.gradle'
