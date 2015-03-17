@@ -2,6 +2,7 @@
 
 ### Java ###
 *.class
+src/autoValue/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -55,3 +56,4 @@ build/
 
 ### OS X ###
 .DS_Store
+
