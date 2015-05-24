@@ -1,11 +1,11 @@
 plugins {
   id 'java'
-  id 'com.ewerk.gradle.plugins.auto-value' version '1.0.2'
+  id 'com.ewerk.gradle.plugins.auto-value' version '1.0.4'
 }
 
 autoValue {
-  autoValueSourcesDir = 'src/autovalue/java'
-  library = 'com.google.auto.value:auto-value:1.0'
+  autoValueSourcesDir = 'src/autoValue/java'
+  library = 'com.google.auto.value:auto-value:1.1'
 }
 
 repositories {
