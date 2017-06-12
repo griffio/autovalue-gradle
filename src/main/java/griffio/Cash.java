@@ -4,7 +4,6 @@ import com.google.auto.value.AutoValue;
 
 import java.math.BigDecimal;
 import java.util.Currency;
-
 /**
  * Cash value with scaling of 2 rounded up for input values.
  * package private constructor

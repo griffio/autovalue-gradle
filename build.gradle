@@ -1,21 +1,35 @@
 plugins {
-  id 'java'
-  id 'com.ewerk.gradle.plugins.auto-value' version '1.0.5'
-}
-
-autoValue {
-  autoValueSourcesDir = 'src/autoValue/java'
-  library = 'com.google.auto.value:auto-value:1.1'
+    id 'java'
 }
 
 repositories {
-  jcenter()
+    jcenter()
+}
+
+configurations {
+    apt
 }
 
 dependencies {
-  testCompile(
-      'com.google.guava:guava-testlib:18.0'
-  )
+    apt 'com.google.auto.value:auto-value:1.4.1'
+    compileOnly 'com.google.auto.value:auto-value:1.4.1'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.google.guava:guava-testlib:22.0'
+}
+
+compileJava {
+    options.annotationProcessorPath = configurations.apt
+}
+
+compileJava {
+    description = "description: ignore processor hints, keep all other hints, disable annotation processing for main compile task - e.g autovalue"
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    options.encoding = "UTF-8"
+    options.compilerArgs = [
+            '-XprintProcessorInfo',
+            '-Xlint:all'
+    ]
 }
 
 apply from: 'wrapper.gradle'
